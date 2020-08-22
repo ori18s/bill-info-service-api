@@ -1,0 +1,19 @@
+{
+  "name": "open-api-bill-info-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/akagaeng/open-api-bill-info-service.git",
+  "author": "akagaeng <akagaeng@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest --env=node"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.1"
+  }
+}
