@@ -1,5 +1,23 @@
 # open-api-bill-info-service
-공공 데이터포털 오픈 api: 의안 정보
+
+## 공공 데이터포털 오픈 api: 의안 정보
+
+## Setup
+* get `SERVICE_KEY` from https://data.go.kr
+* create `.env` and set `SERVICE_KEY`
+
+## Usage
+
+```bash
+
+const api = require('open-api-bill-info-service');
+const result = await api.getBillInfoList();
+console.log(result);
+...
+
+```
+
+## Functions
 
 |Status | function name | 내용 |
 |------ | --------------- | ---------- |
