@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "jest --env=node"
+    "test": "jest test --env=node"
   },
   "dependencies": {
     "axios": "^0.20.0",
