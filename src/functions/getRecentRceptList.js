@@ -1,4 +1,4 @@
-const shared = require('./shared');
+const shared = require('../shared');
 
 /**
  * @typedef GetRecentRceptListParam
@@ -17,4 +17,4 @@ module.exports = (baseUrl, serviceKey, params) => {
     const resource = shared.getBasePathFromFilename(__filename);
     const url = baseUrl + resource;
     return shared.get(url, serviceKey, params)
-}
+};

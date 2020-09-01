@@ -1,4 +1,4 @@
-const getRecentRceptList = require('../src/getRecentRceptList');
+const getRecentRceptList = require('../src/functions/getRecentRceptList');
 const params = {
     pageNo: '1',
     numOfRows: '10',
