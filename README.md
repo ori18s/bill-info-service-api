@@ -34,7 +34,6 @@ console.log(result);
 |  | getBillCommissionExaminationInfo | 의안 위원회심사 정보조회 |
 |  | getBillDeliverateInfo | 의안 본회의심의 정보조회 |
 |  | getBillTransferredInfo | 의안 정부이송 정보조회 |
-|  | getBillFearInfo | 의안 공포 정보조회 |
 |  | getBillAdditionalInfo | 의안 부가정보조회 |
 |  | getPassRceptRecentList | 처리의안 통계(총괄) 정보조회 |
 |  | getRceptKndList | 처리의안 통계(의안종류별) 정보조회 |
