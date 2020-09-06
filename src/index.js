@@ -5,7 +5,6 @@ const getBillAdditionalInfo = require('./functions/getBillAdditionalInfo.js');
 const getBillCommissionExaminationInfo = require('./functions/getBillCommissionExaminationInfo.js');
 const getBillComprehensiveAuditInfo = require('./functions/getBillComprehensiveAuditInfo.js');
 const getBillDeliverateInfo = require('./functions/getBillDeliverateInfo.js');
-const getBillFearInfo = require('./functions/getBillFearInfo.js');
 const getBillInfoList = require('./functions/getBillInfoList.js');
 const getBillPetitionMemberList = require('./functions/getBillPetitionMemberList.js');
 const getBillPreliminaryExaminationInfo = require('./functions/getBillPreliminaryExaminationInfo.js');
@@ -45,7 +44,6 @@ module.exports = {
   getBillCommissionExaminationInfo,
   getBillComprehensiveAuditInfo,
   getBillDeliverateInfo,
-  getBillFearInfo,
   getBillInfoList,
   getBillPetitionMemberList,
   getBillPreliminaryExaminationInfo,
