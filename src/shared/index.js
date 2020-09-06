@@ -8,15 +8,15 @@ const path = require('path');
  * @param {Object} params - querystring openapi supports
  */
 exports.get = async (url, serviceKey, params) => {
-    if (!serviceKey) {
-        throw new Error('Service key required. Set as an environment variable.');
-    }
-
-    return axios.get(`${url}?ServiceKey=${serviceKey}`, params)
-        .then(res => res.data.response.body.items.item)
-        .catch(err => err);
-}
+  if (!serviceKey) {
+    throw new Error('Service key required. Set as an environment variable.');
+  }
+  axios.defaults.adapter = require('axios/lib/adapters/http');
+  return axios.get(`${url}?ServiceKey=${serviceKey}`, params)
+      .then(res => res.data.response.body.items.item)
+      .catch(err => err);
+};
 
 exports.getBasePathFromFilename = (currentPath = __filename, ext = '.js') => {
-    return path.basename(currentPath, ext);
+  return path.basename(currentPath, ext);
 }
