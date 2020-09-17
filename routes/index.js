@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const {getHealthCheck} = require('../controllers/index');
 
 /**
- * @swagger
+ * NOT listed in the api spec document
+ * GET /
+ *
  * /:
  *   get:
  *     description: health check
@@ -10,19 +13,6 @@ const router = express.Router();
  *       200:
  *         description: health check
  */
-router.get('/', async (req, res, next) => {
-  const healthcheck = {
-    uptime: process.uptime(),
-    message: 'OK',
-    timestamp: Date.now(),
-    mem: process.memoryUsage(),
-  };
-  try {
-    res.send(healthcheck);
-  } catch (e) {
-    healthcheck.message = e;
-    res.status(503).send();
-  }
-});
+router.get('/', getHealthCheck);
 
 module.exports = router;
