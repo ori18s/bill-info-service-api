@@ -10,12 +10,9 @@ const shared = require('../shared');
 
 /**
  * 최근 통과의안 목록을 조회
- * @param {String} baseUrl - openapi base url
- * @param {String} serviceKey - openapi serviceKey
  * @param {GetRecentPasageListParam} params - openapi params: query string supported from open api
  */
-module.exports = (baseUrl, serviceKey, params) => {
+module.exports = (params) => {
   const resource = shared.getBasePathFromFilename(__filename);
-  const url = baseUrl + resource;
-  return shared.get(url, serviceKey, params)
+  return shared.get(resource, params);
 };

@@ -1,7 +1,7 @@
 const shared = require('../shared');
 
 /**
- * @typedef GetBillingInfoParam
+ * @typedef GetBillingInfoListParam
  * @property {String} pageNo: '1',
  * @property {String} numOfRows: '10',
  * @property {String} mem_name_check: 'G01',
@@ -33,12 +33,9 @@ const shared = require('../shared');
 
 /**
  * 의안 목록 검색
- * @param {String} baseUrl - openapi base url
- * @param {String} serviceKey - openapi serviceKey
- * @param {GetBillingInfoParam} params - openapi params: query string supported from open api
+ * @param {GetBillingInfoListParam} params - openapi params: query string supported from open api
  */
-module.exports = (baseUrl, serviceKey, params) => {
-    const resource = shared.getBasePathFromFilename(__filename);
-    const url = baseUrl + resource;
-    return shared.get(url, serviceKey, params)
+module.exports = (params) => {
+  const resource = shared.getBasePathFromFilename(__filename);
+  return shared.get(resource, params);
 };
