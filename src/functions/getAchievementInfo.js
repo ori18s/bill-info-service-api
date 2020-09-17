@@ -1,4 +1,3 @@
-baseUrl, serviceKey, params
 const shared = require('../shared');
 
 /**
