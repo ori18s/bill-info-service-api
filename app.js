@@ -5,14 +5,8 @@ const helmet = require('helmet');
 const c = require('ansi-colors');
 const swaggerUI = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
-
-const NODE_ENV = process.env.NODE_ENV || 'development';
-
-if (NODE_ENV === 'development') {
-  console.log(c.yellow('* dotenv activated'));
-  require('dotenv').config();
-}
 const {name, version} = require('./package.json');
+const config = require('./config')();
 
 const indexRouter = require('./routes/index');
 const billRouter = require('./routes/bill');
@@ -78,7 +72,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(app.get('port'), () => {
-  console.log(c.red(`[${NODE_ENV}] Listening on port ${app.get('port')}`));
+  console.log(c.red(`[${config.nodeEnv}] Listening on port ${app.get('port')}`));
 });
 
 module.exports = app;
