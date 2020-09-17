@@ -29,5 +29,9 @@
   "devDependencies": {
     "jest": "^26.4.1",
     "nodemon": "^2.0.4"
+  },
+  "jest": {
+    "verbose": true,
+    "testTimeout": 30000
   }
 }
