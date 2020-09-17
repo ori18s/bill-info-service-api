@@ -42,7 +42,6 @@ yarn start
 |[GET] /commit_petition_process_infos | getCommitPetitionProcessInfoList | 청원 처리 목록 정보조회 |
 |[GET] /commit_petition_mooring_infos | getCommitPetitionMooringInfoList | 청원 계류 목록 정보조회 |
 |[GET] /annual_reports | getAnnualReportList | 연차보고서 목록 정보조회 |
-
 |[GET] /bill_receipt_info | getBillReceiptInfo | 의안 접수 정보조회 |
 |[GET] /bill_preliminary_examination_info | getBillPreliminaryExaminationInfo | 의안 예비심사 정보조회 |
 |[GET] /bill_comprehensive_audit_info | getBillComprehensiveAuditInfo | 의안 종합심사 정보조회 |
