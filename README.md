@@ -12,9 +12,12 @@
 yarn start
 ```
 
+## Basic API Endpoints
 * http://localhost:8080
+  * healthcheck: /
+  * api document: /api
 
-## APIs & Functions
+## 의안정보 APIs & Functions
 
 |Routes | function | 내용 |
 |------ | --------------- | ---------- |
