@@ -1,5 +1,4 @@
 const getBillInfoList = require('../src/functions/getBillInfoList');
-const {basePath, serviceKey} = require('../config');
 const params = {
   pageNo: '1',
   numOfRows: '10',
@@ -30,11 +29,8 @@ const params = {
   budget: 'false'
 };
 
-beforeAll(() => {
-  require('dotenv').config();
-});
-
 it('getBillInfoList', async () => {
-  const res = await getBillInfoList(basePath, serviceKey, params);
+  const res = await getBillInfoList(params);
+  console.log(res);
   expect(res[0].billId.split('_')[0]).toBe('PRC');
 });
