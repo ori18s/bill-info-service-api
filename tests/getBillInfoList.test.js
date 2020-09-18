@@ -1,4 +1,4 @@
-const getBillInfoList = require('../src/functions/getBillInfoList');
+const getBillInfoList = require('../src/bill/getBillInfoList');
 const params = {
   pageNo: '1',
   numOfRows: '10',
