@@ -29,7 +29,7 @@ exports.get = async (resourcePath = '', params) => {
   const url = `${basePath}${resourcePath}?${queryString}`;
 
   return axios.get(url)
-      .then(res => res.data.response.body.items.item)
+      .then(res => res.data.response.body)
       .catch(err => err);
 };
 
