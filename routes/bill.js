@@ -10,7 +10,7 @@ const billController = require('../controllers/bill');
  *   get:
  *     summary: get bill info
  *     tags:
- *       - Bill Info
+ *       - Bill
  *     description:
  *     parameters:
  *       - in: query
@@ -155,5 +155,39 @@ const billController = require('../controllers/bill');
  *           application/json
  */
 router.get('/info', billController.getBillInfoList);
+
+/**
+ * GET /bill/petition_member
+ *
+ * @swagger
+ * /bill/petition_member:
+ *   get:
+ *     summary: get bill petition member
+ *     tags:
+ *       - Bill
+ *     description:
+ *     parameters:
+ *       - in: query
+ *         required: true
+ *         type: string
+ *         description: '의안ID'
+ *         name: bill_id
+ *       - in: query
+ *         required: false
+ *         type: string
+ *         description: '구분1'
+ *         name: gbn1
+ *       - in: query
+ *         required: false
+ *         type: string
+ *         description: '구분2'
+ *         name: gbn2
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json
+ */
+router.get('/petition_member', billController.getBillPetitionMemberList);
 
 module.exports = router;
