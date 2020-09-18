@@ -8,7 +8,7 @@ const qs = require('querystring');
  * @param {Object} params - querystring openapi suppathports
  */
 exports.get = async (resourcePath = '', params) => {
-  const {basePath, serviceKey} = require('../../config')();
+  const {basePath, serviceKey} = require('../config')();
 
   if (!serviceKey) {
     throw new Error('Service key required. Set as an environment variable.');
