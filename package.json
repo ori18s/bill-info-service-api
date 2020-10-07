@@ -2,7 +2,7 @@
   "name": "bill-info-service-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/akagaeng/bill-info-service-api.git",
+  "repository": "https://github.com/prairieduck/bill-info-service-api",
   "author": "akagaeng <akagaeng@gmail.com>",
   "license": "MIT",
   "private": true,
